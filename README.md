@@ -93,3 +93,42 @@ Para entregar, agrega al final de este `README.md` una sección con tu nombre y 
 3. ¿Los clientes VIP compran más que los Regulares?
 4. ¿Qué método de pago es el más usado?
 5. ¿Cuáles son los cinco clientes con más compras?
+
+---
+
+## Entregable final
+
+**Alumno:** Jesús Leonardo Torre Melgarejo | **Documento:** 1020497992
+
+### Respuestas del Desafío Final
+
+**1. ¿Qué categoría genera más ingresos?**  
+La categoría **Tecnología** genera más ingresos, con un total de **$14.290.000**.
+
+Criterio: Suma del campo `total` agrupado por `categoria`.
+
+**2. ¿Qué canal vende más?**  
+El canal **Online** vende más.  
+- Online: 35 ventas = $14669000
+- Tienda: 33 ventas = $4507000
+
+Criterio: Ingresos totales.
+
+**3. ¿Los clientes VIP compran más que los Regulares?**  
+Si, los clientes VIP tienen un promedio de **1.21 compras**, mientras que los Regulares tienen **1.08 compras**.
+
+Criterio: Se compararon promedios por cliente porque hay distinta cantidad de clientes.
+
+**4. ¿Qué método de pago es el más usado?**  
+El método de pago más usado es **Efectivo**.
+
+Criterio: Conteo de ventas por método de pago.
+
+**5. ¿Cuáles son los cinco clientes con más compras?**  
+1. Nicolas Cardona   | 2 compras | $2.515.000  
+2. Matias Rodriguez  | 2 compras | $1.278.000  
+3. Mia Quintero      | 2 compras | $1.090.000  
+4. Luna Montoya      | 2 compras | $1.007.000  
+5. Luis Perez        | 2 compras | $730.000  
+
+Criterio: número de compras y gasto total.
