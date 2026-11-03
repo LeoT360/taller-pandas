@@ -100,6 +100,26 @@ Para entregar, agrega al final de este `README.md` una sección con tu nombre y 
 
 **Alumno:** Jesús Leonardo Torre Melgarejo | **Documento:** 1020497992
 
+### Explicación de `.iloc[2, 6]` (Entregable 1)
+
+Después de hacer `set_index("id_venta")`, la columna `id_venta` deja de ser una columna y pasa a ser el índice. Por eso las columnas se reordenan empezando en la posición 0.  
+
+La fila de la venta **V003** queda en la posición **2** (tercera fila, porque empieza en 0).  
+La columna `total` queda en la posición **6**.  
+
+Por eso `.iloc[2, 6]` devuelve el valor del total de la venta V003.
+
+### Explicación de la limpieza (Entregable 2)
+
+Al revisar los datos se encontraron los siguientes problemas:
+
+- En la tabla de **clientes** no había valores nulos ni filas duplicadas. Aun así se aplicó `.str.title()` a la columna `ciudad` para asegurar un formato consistente de mayúsculas, y se eliminaron posibles duplicados con `.drop_duplicates()` reiniciando el índice.
+- En la tabla de **ventas** se encontró **1 valor nulo** en la columna `producto`. Se decidió rellenarlo con el texto `"Sin especificar"` usando `.fillna()`, porque eliminar la fila con `.dropna()` habría significado perder una venta real con un total de dinero.  
+- También se convirtió la columna `fecha_venta` de texto a tipo fecha con `pd.to_datetime()`, para poder trabajar correctamente con fechas.  
+- Finalmente se eliminaron posibles filas duplicadas y se reinició el índice.
+
+Después de la limpieza, ambas tablas quedaron listas para el proceso de merge y análisis.
+
 ### Respuestas del Desafío Final
 
 **1. ¿Qué categoría genera más ingresos?**  
